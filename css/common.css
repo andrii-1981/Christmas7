@@ -20,4 +20,10 @@ h2 {
     color: #232323;
     font-weight: bold;
     font-size: 42px;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.arrow {
+    height: 32px;
 }
