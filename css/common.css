@@ -8,8 +8,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --subheader-color: #bb2528;
+    --text-color: #232323;
+    --background-color: #f9f4ee;
+    scroll-behavior: smooth;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+  }
+  
 .subheader {
-    color: #bb2528;
+    color: var(--subheader-color);
     font-size: 22px;
     letter-spacing: .06em;
     font-family: 'Grand Hotel', cursive;
