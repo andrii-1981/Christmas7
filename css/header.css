@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__top__container > a {
+    text-decoration: none;
+    color: white;  
+}
+.header__top__container {
+    color: white;
+}
+.text__links {
+    color: black;
+}
+
+.header__bottom__christmas__decor {
+    font-size: 48px;
+    padding-top: 20px;
+    color: rgb(35,35,35);
+    font-family: 'Playfair Display',serif;
+}
+
+.header__bottom_info__about__decoration {
+    font-size: 16px;
+    
+}
+
+.line-icon {
+    padding-top: 20px;
+}
+
+.header__bottom_info__about__decoration {
+    padding-top: 20px;
+    color: rgb(79,79,79);
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.header__bottom__h2__container {
+    font-size: 18px;
+    font-family: 'Grand Hotel', undefined;
+    color: rgb(187,37,40)
+}
+
+.header__top__container{
+opacity: 0;
+}
+
+@media (min-width: 991px) {
+    .header__top__container {
+    opacity: 1;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        max-width: 1500px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        font-size: 1.4rem;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .header__top__container > span {
+        margin-left: 40px;
+    }
+}
+
+.container__img__logo____middle {
+    margin-left: 40px;
+    align-items: center;
+}
+
+@media (max-width: 991px){
+    .links_container__middle {
+        opacity: 0;
+    }
+}
+
+/* .links_container__middle {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-around;
+    padding: 5px;
+    height: 120px; */
+    
+/* } */
+
+@media (min-width: 991px) {
+    .header__middle__container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    
+    
+    
+    }
+     .container__img__logo____middle{
+        margin-left: 60px;
+        flex: 0;
+        scroll-behavior: auto;
+     }
+    
+    .links_container__middle {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        flex: 4;
+           
+} 
+    .text__links__container__middle {
+       word-spacing: 1.5rem;
+        text-align: center;
+        justify-content: center;
+        
+    }   
+    .image__links_container__middle {
+        flex-flow: 0;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+
+.section_after_header {
+    background-image: url(../img/header/doughter_mom_new_year.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+   
+}
+
+.header__bottom__container {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    text-align:justify;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    background-color: white;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 549px;
+    height: 360px;
+    scroll-behavior: calc(100%/3);
+    box-sizing: border-box;
+    
+}
+
+.container__header__button {
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+    width: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+    
+
+}
+
+.header__bottom__shop__button__button {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    width: 87px;
+    height: 42px;
+    display: inline-block;
+    font-size: 10.8px;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 10px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header__bottom__shop__button__button:hover {
+background-color: #000;
+}
+
+.header__bottom__learn__button__button {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    width: 120px;
+    height: 42px;
+    display: inline-block;
+    font-size: 10.8px;
+    font-weight: bold;
+    margin: 0;
+    padding: 12px 10px;
+    text-align: center;
+    justify-content: space-around;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 30px;
+}
+
+.header__bottom__learn__button__button:hover {
+    background-color: #000;
+    color: white;
+}
