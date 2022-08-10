@@ -2,6 +2,11 @@
     margin-top: 25px;
   }
   
+  .bestsellers_main{
+    display: flex;
+    flex-direction: column;
+  }
+
   .bestsellers_title{
     margin-top: 20px;
   }
@@ -34,7 +39,15 @@
     gap: 30px;
   }
   .product_image {
-    max-width: 650px;
+    object-fit: cover;
+    /* object-position: 54.128% 0%; */
+    box-sizing: border-box;
+    padding-top: 50px;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
   }
   
   .product_description {
@@ -104,3 +117,22 @@
     
     text-decoration: none;
    }
+
+   @media (min-width: 900px) {
+    .bestsellers_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        /* max-width: 240px; */
+    }
+  }
+
+   @media (min-width: 1000px) {
+    .bestsellers_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* gap: 20px; */
+        /* max-width: 240px; */
+    }
+  }
+
