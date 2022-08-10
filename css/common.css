@@ -24,9 +24,10 @@
   
 .subheader {
     color: var(--subheader-color);
-    font-size: 22px;
+    font-size: 14px;
     letter-spacing: .06em;
     font-family: 'Grand Hotel', cursive;
+    vertical-align: baseline;
 }
 
 h2 {
