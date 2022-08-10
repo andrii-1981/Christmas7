@@ -1,0 +1,86 @@
+.subheader {
+    margin-top: 25px;
+  }
+  
+  .bestsellers_title{
+    margin-top: 20px;
+  }
+  
+  .bestsellers_text {
+    font-family: Fira Sans,sans-serif;
+    color: #737373;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
+  .arrow {
+    margin-top: 25px;
+  }
+  
+  .bestsellers_cards {
+    margin-top: 45px;
+    margin-bottom: 90px;
+  }
+  
+  .bestsellers_card {
+    max-width: 695px;
+    border: #737373;
+    border: 1px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .product_image {
+    max-width: 650px;
+  }
+  
+  .product_description {
+    font-size: 18px;
+      line-height: 1.56;
+      font-family: Fira Sans,sans-serif;
+      font-weight: 400;
+      text-decoration: none;
+      font-style: normal;
+      letter-spacing: 0;
+      color: #737373;
+      text-transform: none;
+      margin: 8px 0 0;
+  }
+   .product_price{
+    color: #bb2528;
+    font-family: Fira Sans,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-top: 16px;
+   }
+  
+   .card_btn {
+    background: transparent;
+    color: #bb2528;
+    font-family: Fira Sans,sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    display: inline-block;
+      position: relative;
+      max-width: 100%;
+      word-wrap: break-word;
+    margin-top: 24px;
+    text-decoration: none;
+   }
+  
+   .btn_add {
+    background: transparent;
+    border: 2px;
+    color: #bb2528;
+    font-family: Fira Sans,sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
+   }
