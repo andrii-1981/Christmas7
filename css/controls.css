@@ -40,3 +40,24 @@
     color: white;
   }
   
+  .button_contactus {
+    display: block;
+    height: 62px;
+    width: 215px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 13.2px;
+    font-weight: 400;
+    margin: 0 15px 20px 0;
+    line-height: 55px;
+    border: 2px solid white;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  
+  .button_contactus:hover {
+    background-color: rgb(255, 255, 255);
+    transition-duration: 1s;
+    color: black;
+  }
