@@ -1,0 +1,113 @@
+.about-section {
+    color: rgb(79, 79, 79);
+    display: inline;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .btn-nav-shop {
+    display: inline-flex;
+    position: relative;
+    margin: 0;
+    padding: 15px 20px;
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-color: white;
+    border-style: none;
+  }
+  .btn-context {
+    border-color: rgb(115, 115, 115);
+    box-sizing: border-box;
+    color: rgb(115, 115, 115);
+    cursor: pointer;
+    display: inline;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28.08px;
+  }
+  .btn-nav-shop:hover {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(187, 37, 40);
+    transition: 0.2s ease-in-out;
+  }
+  .nav-shop {
+    height: 58px;
+    justify-content: flex-start;
+    line-height: 25px;
+    min-width: 100%;
+    position: relative;
+    vertical-align: baseline;
+    width: 1170px;
+  }
+  .row {
+    display: inline-block;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    height: 455px;
+    line-height: 25px;
+    width: 1170px;
+  }
+  .column {
+    float: left;
+    display: inline;
+    flex-basis: 25%;
+    font-size: 16px;
+    font-weight: 400;
+    height: 455px;
+    justify-content: center;
+    line-height: 25px;
+    max-width: 25%;
+    padding: 0px 15px;
+    text-align: center;
+    width: 300px;
+    -webkit-box-pack: center;
+  }
+  .img-shop {
+    background-color: rgba(0, 0, 0, 0);
+    height: 226px;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    vertical-align: baseline;
+    width: 226px;
+  }
+  .link-shop {
+    display: inline-block;
+    width: 100%;
+    margin-top: 24px;
+    color: inherit;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  .price-shop {
+    color: rgb(187, 37, 40);
+    font-size: 18px;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 16px;
+    width: 53px;
+  }
+  .cart-shop {
+    margin-top: 24px;
+    margin-bottom: 0;
+    background-color: white;
+    border-color: #bb2528;
+    color: #bb2528;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    height: 45px;
+    line-height: 13.5px;
+    max-width: 100%;
+    padding: 16px 33px;
+    position: relative;
+    text-align: center;
+    vertical-align: baseline;
+    width: 120px;
+  }
