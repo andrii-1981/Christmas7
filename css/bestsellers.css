@@ -48,6 +48,7 @@
       color: #737373;
       text-transform: none;
       margin: 8px 0 0;
+      text-decoration: none;
   }
    .product_price{
     color: #bb2528;
@@ -101,4 +102,5 @@
     text-decoration: none;
     white-space: nowrap;
     margin-left: 30px;
+    text-decoration: none;
    }
