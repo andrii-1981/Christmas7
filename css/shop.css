@@ -67,10 +67,8 @@
     -webkit-box-pack: center;
   }
   .img-shop {
-    background-color: rgba(0, 0, 0, 0);
     height: 226px;
     line-height: 25px;
-    position: absolute;
     text-align: center;
     vertical-align: baseline;
     width: 226px;
@@ -95,7 +93,6 @@
   .cart-shop {
     margin-top: 24px;
     margin-bottom: 0;
-    background-color: white;
     border-color: #bb2528;
     color: #bb2528;
     cursor: pointer;
