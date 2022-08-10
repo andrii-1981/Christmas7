@@ -1,4 +1,69 @@
-.special_offer > .container{
-   max-height: 670px;
-}
-
+.special_offer {
+   min-height: 750px;
+   background: url(../img/special_offer/bg_special_offer.png) center center/cover no-repeat fixed;
+ }
+ 
+ .special_offer > .container {
+   padding: 120px 15px;
+ }
+ 
+ @media (min-width: 750px) {
+   .special_offer__main {
+     max-width: 570px;
+     max-height: 511px;
+   }
+ }
+ .special_offer__item {
+   background-color: var(--backgroung-for-little-block);
+   padding: 0 40px 20px;
+ }
+ .subheader {
+   padding-top: 77px;
+   font-size: 20px;
+   color: var(--subheader-color);
+ }
+ 
+ .special_offer_header {
+   font-stretch: inherit;
+   padding-top: 17px;
+   font-size: 34px;
+   font-family:'Playfair Display', serif;
+   font-weight: 400;
+ }
+ 
+ .img_arrow {
+   padding-top: 37px;
+   padding-bottom: 37px;
+ }
+ .special_offer_text {
+   font-size: 18px;
+   font-stretch: inherit;
+   font-family: "Fira Sans", sans-serif;
+   color: var(--p-text-color1);
+   font-weight: 400;
+ }
+ @media (min-width: 750px) {
+   .special_offer_text {
+     font-size: 18px;
+   }
+ }
+ .special_offer_btn {
+   padding-top: 40px;
+   display: flex;
+   flex-direction: column;
+   padding-right: 5px;
+   font-family: "Fira Sans", sans-serif;
+ }
+ 
+ @media (min-width: 400px) {
+   .special_offer_btn {
+     display: flex;
+     flex-direction: row;
+     justify-content: start;
+   }
+ }
+ 
+ .header__bottom__shop__button {
+   text-align: center;
+ }
+ 

@@ -1,0 +1,42 @@
+.button_shop {
+    display: block;
+    height: 45.5px;
+    width: 120px;
+    background-color: #bb2528;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 10px;
+    font-weight: 400;
+    box-shadow: 5px 5px 5px rgba(207, 209, 209, 0.829);
+    margin: 0 15px 20px 0;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .button_shop:hover {
+    background-color: rgb(35, 35, 35);
+    transition-duration: 2s;
+  }
+  .button_contact {
+    display: block;
+    height: 45.5px;
+    width: 120px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-weight: 10px;
+    font-weight: 400;
+    margin: 0 15px 20px 0;
+    line-height: 40px;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .button_contact:hover {
+    background-color: rgb(35, 35, 35);
+    transition-duration: 1s;
+    color: white;
+  }
+  
