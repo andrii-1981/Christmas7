@@ -1,0 +1,76 @@
+.sale__discount {
+    margin: 15px;
+    max-width: 620px;
+    min-width: 320px;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+.sale__discount__free {
+    margin: 10px;
+    background-color: rgb(187, 37, 40);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 29px;
+    padding-right: 29px;
+    color: white;
+    min-width: 450px;
+    flex-direction: column;
+}
+.sale__discount__off {
+    margin: 10px;
+    background-color: rgb(238, 161, 67);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 29px;
+    padding-right: 29px;
+    min-width: 450px;
+    color: white;
+    flex-direction: column;
+}
+.sale__discount__buy__button {
+    border: 2px solid white;
+    padding: 20px 50px 20px 50px;
+    margin: 10px;
+    max-width: 230px;
+    max-height: 100px;
+    display: flex;
+    text-align: center;
+    
+}
+.sale__discount__buy__button__inner {
+    display: inline-flex;
+    
+
+}
+
+.buy__3__get__1__free {
+    background-color: rgb(187, 37, 40);
+}
+.sale__discount__h {
+    font-family: Grand Hotel,undefined;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    
+}
+.sale__discount__text {
+    font-size: 42px;
+    color: white;
+    line-height: 1.2;
+    font-family: Playfair Display,serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}    
+.text__links {
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+}
