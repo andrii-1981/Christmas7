@@ -18,6 +18,7 @@
 }
 .text__links {
     color: black;
+    text-decoration: none;
 }
 
 .header__bottom__christmas__decor {
