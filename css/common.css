@@ -34,11 +34,12 @@
 
 h2 {
     font-family: 'Playfair Display', serif;
-    color: #232323;
+    color: var(--text-color);
     font-weight: bold;
-    font-size: 42px;
+    font-size: 34px;
     line-height: 1.2;
     margin-top: 20px;
+    letter-spacing: 0;
 }
 
 .arrow {
