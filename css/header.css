@@ -165,10 +165,10 @@ opacity: 0;
     padding-left: 35px;
     padding-right: 35px;
     width: 549px;
-    height: 360px;
+    height: 380px;
     scroll-behavior: calc(100%/3);
     box-sizing: border-box;
-    
+    margin-bottom: 20px;
 }
 
 .container__header__button {
@@ -178,6 +178,7 @@ opacity: 0;
     width: 100%;
     padding-top: 40px;
     box-sizing: border-box;
+    margin-bottom: 30 px;
     
 
 }
@@ -191,7 +192,7 @@ opacity: 0;
     display: inline-block;
     font-size: 10.8px;
     font-weight: bold;
-    margin: 0;
+    margin: 0 15px 20px 0;
     padding: 12px 10px;
     justify-content: center;
     text-align: center;
@@ -213,13 +214,13 @@ background-color: #000;
     display: inline-block;
     font-size: 10.8px;
     font-weight: bold;
-    margin: 0;
     padding: 12px 10px;
     text-align: center;
     justify-content: space-around;
     text-decoration: none;
     white-space: nowrap;
     margin-left: 30px;
+    
 }
 
 .header__bottom__learn__button__button:hover {
