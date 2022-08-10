@@ -1,0 +1,80 @@
+.Our__Happy__Clients {
+    width: 100%;
+    padding: 90px 0px;
+}
+
+.container {
+    margin: 0 24px;
+}
+   
+.happy_client {
+   display: flex;
+   flex-direction: column;
+} 
+
+.arrow {
+   margin-top: 25px;
+}
+
+.happy_text {
+    font-family: Fira Sans,sans-serif;
+    color: #737373;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
+  .img_carousel {
+    object-fit: cover;
+    object-position: 54.128% 0%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+  }
+  
+  .carousel_name {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #bb2528;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  
+  .divider {
+    height: 3px;
+    width: 8%;
+    background-color: #f9f4ee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .carousel_text {
+    font-family: "Fira Sans", sans-serif;
+    color: #737373;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+    word-wrap: break-word;
+  }
+  
+  .carousel_date {
+    font-family: "PT Sans", sans-serif;
+    color: #4F4F4F;    
+    text-transform: none;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 20px;
+  }
+
+  @media (min-width: 765px) {
+    .happy_carousel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+  }

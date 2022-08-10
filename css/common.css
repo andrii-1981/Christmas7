@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Grand+Hotel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -12,10 +13,13 @@
     --subheader-color: #bb2528;
     --text-color: #232323;
     --background-color: #f9f4ee;
+    --backgroung-for-little-block:white;
+    --p-text-color2: #4F4F4F;
+    --p-text-color1: #737373;
     scroll-behavior: smooth;
   }
 
-  .container {
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: auto;
@@ -23,20 +27,24 @@
   
 .subheader {
     color: var(--subheader-color);
-    font-size: 22px;
+    font-size: 14px;
     letter-spacing: .06em;
     font-family: 'Grand Hotel', cursive;
+    vertical-align: baseline;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    color: #232323;
+    color: var(--text-color);
     font-weight: bold;
-    font-size: 42px;
+    font-size: 34px;
     line-height: 1.2;
     margin-top: 20px;
+    letter-spacing: 0;
 }
 
 .arrow {
     height: 32px;
+    object-fit: contain;
+    object-position: 0% 50%;
 }
