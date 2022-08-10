@@ -44,4 +44,6 @@ h2 {
 
 .arrow {
     height: 32px;
+    object-fit: contain;
+    object-position: 0% 50%;
 }
