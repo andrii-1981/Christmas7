@@ -165,10 +165,10 @@ opacity: 0;
     padding-left: 35px;
     padding-right: 35px;
     width: 549px;
-    height: 380px;
-    scroll-behavior: calc(100%/3);
+    height: 450px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    scroll-behavior: auto;
 }
 
 .container__header__button {
