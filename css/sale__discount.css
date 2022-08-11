@@ -1,32 +1,33 @@
 .sale__discount {
     margin: 15px;
-    max-width: 620px;
-    min-width: 320px;
+    max-width: 100%;
     box-sizing: border-box;
     display: flex;
     
 }
 .sale__discount__free {
     margin: 10px;
-    background-color: rgb(187, 37, 40);
+    background-image: url(..//img/sale__discount/background_buy.png);
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 29px;
     padding-right: 29px;
-    color: white;
-    min-width: 450px;
+    max-width: 100%;
     flex-direction: column;
+    background-position: 55% 70%;
+    color: white;
 }
 .sale__discount__off {
     margin: 10px;
-    background-color: rgb(238, 161, 67);
+    background-image: url(..//img/sale__discount/background_off.png);
+    background-position: 89% 10%;
     padding-top: 35px;
     padding-bottom: 35px;
     padding-left: 29px;
     padding-right: 29px;
-    min-width: 450px;
-    color: white;
+    max-width: 100%;
     flex-direction: column;
+    color: white;
 }
 .sale__discount__buy__button {
     border: 2px solid white;
@@ -36,22 +37,29 @@
     max-height: 100px;
     display: flex;
     text-align: center;
-    
+    align-items:flex-end;
+    color: white;
+    border-radius: 2px;
+}
+.sale__discount__buy__button:hover {
+    background-color: white;
+    color: black;
 }
 .sale__discount__buy__button__inner {
-    display: inline-flex;
+    margin: auto;
+    color: white;
+    display: flex;
     
 
 }
 
-.buy__3__get__1__free {
-    background-color: rgb(187, 37, 40);
-}
+
 .sale__discount__h {
     font-family: Grand Hotel,undefined;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.08px;
     
 }
 .sale__discount__text {
@@ -73,4 +81,12 @@
     margin: 5px;
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 768px){
+    .sale__discount {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
 }
