@@ -17,6 +17,14 @@
     font-size: 18px;
     color:var(--p-text-color2);
 }
+#about > div.about__info span.slider-dot {
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    background-color: #e9c0bd;
+    border-radius: 50%;
+    display: inline-block;
+}
 @media (min-width: 768px){
     #about {        
         flex-direction: row;
