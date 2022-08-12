@@ -8,7 +8,7 @@
    margin: auto;
  }
  
- @media (min-width: 750px) {
+ @media (min-width: 768px) {
    .special_offer__main {
      max-width: 570px;
      max-height: 511px;
@@ -31,8 +31,19 @@
    font-stretch: inherit;
    padding-top: 17px;
    font-size: 34px;
-   font-family:'Playfair Display', serif;
+   font-family: var(--h2-font-family);
  }
+
+ @media (min-width: 768px) {
+  .special_offer_header {
+    font-size: 38px;
+  }
+}
+@media (min-width: 992px) {
+  .special_offer_header {
+    font-size: 42px;
+  }
+}
  
  .img_arrow {
    padding-top: 37px;
@@ -41,24 +52,20 @@
  .special_offer_text {
    font-size: 18px;
    font-stretch: inherit;
-   font-family: "Fira Sans", sans-serif;
+   font-family:var(--p-font-family);
    color: var(--p-text-color1);
    font-weight: 400;
  }
- @media (min-width: 750px) {
-   .special_offer_text {
-     font-size: 18px;
-   }
- }
+
  .special_offer_btn {
    padding-top: 40px;
    display: flex;
    flex-direction: column;
    padding-right: 5px;
-   font-family: "Fira Sans", sans-serif;
+   font-family:var(--p-font-family);
  }
  
- @media (min-width: 400px) {
+ @media (min-width: 367px) {
    .special_offer_btn {
      display: flex;
      flex-direction: row;

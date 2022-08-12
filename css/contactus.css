@@ -16,19 +16,20 @@
   }
   
   .contact_us_subheader > .subheader {
-    color: white;
+    color: var(--backgroung-for-little-block);
     padding: 0;
     line-height: 18px;
     font-weight: 400;
+    font-family: var(--subheader-font-family);
   }
   
-  @media (min-width: 750px) {
+  @media (min-width: 768px) {
     .contact_us_subheader > .subheader {
       font-size: 18px;
       line-height: 18px;
     }
   }
-  @media (min-width: 990px) {
+  @media (min-width: 992px) {
     .contact_us_subheader > .subheader {
       font-size: 22px;
       line-height: 22px;
@@ -37,7 +38,7 @@
   
   .contact_us_phone_link {
     text-decoration: none;
-    color: white;
+    color: var(--backgroung-for-little-block);
   }
   
   .contact_us_phone_link:hover {
@@ -46,20 +47,21 @@
   .contact_us_header,
   .contact_us_text {
     font-size: 34px;
-    color: white;
+    color: var(--backgroung-for-little-block);
     font-weight: 600;
     line-height: 46px;
     padding-top: 10px;
     line-height: 51px;
+    font-family: var(--h2-font-family);
   }
   
-  @media (min-width: 750px) {
+  @media (min-width: 768px) {
     .contact_us_header,
     .contact_us_text {
       font-size: 38px;
     }
   }
-  @media (min-width: 990px) {
+  @media (min-width: 992px) {
     .contact_us_header,
     .contact_us_text {
       font-size: 42px;
@@ -68,5 +70,6 @@
   
   .contact_us_btn {
     padding-top: 40px;
+    font-family: var(--p-font-family);
   }
   
