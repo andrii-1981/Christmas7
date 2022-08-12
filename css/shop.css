@@ -9,8 +9,8 @@
   .btn-nav-shop {
     display: inline-flex;
     position: relative;
-    margin: 0;
-    padding: 15px 20px;
+    margin: auto;
+    padding: 10px 20px;
     -webkit-box-align: center;
     align-items: center;
     background: transparent;
@@ -28,6 +28,7 @@
     font-family: "Fira Sans", sans-serif;
     font-size: 18px;
     line-height: 28.08px;
+    text-align: center;
   }
   .btn-nav-shop:hover {
     border-bottom-style: solid;
@@ -46,7 +47,7 @@
   .img-shop {
     height: 226px;
     line-height: 25px;
-    text-align: center;
+    margin: auto;
     vertical-align: baseline;
     width: 226px;
   }
@@ -85,4 +86,7 @@
     text-align: center;
     vertical-align: baseline;
     width: 120px;
+  }
+  .card {
+    text-align: center;
   }
