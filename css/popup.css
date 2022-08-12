@@ -60,6 +60,7 @@
     line-height: 40.8px;
     font-weight: 600;
     text-align: center;
+    font-family: var(--h2-font-family);
   }
   
   @media (min-width: 768px) {
@@ -87,7 +88,7 @@
     padding: 20px 50px;
     min-width: 162px;
     height: 55px;
-    background: white;
+    background: var(--backgroung-for-little-block);
     color: rgb(35, 35, 35);
     font-size: 10.8px;
     font-stretch: 100%;
