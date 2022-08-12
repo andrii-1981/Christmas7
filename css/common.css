@@ -18,6 +18,7 @@
     --p-text-color1: #737373;
     scroll-behavior: smooth;
     --h2-font-family: 'Playfair Display', serif;
+    --subheader-font-family: 'Grand Hotel', cursive;
   }
 
 .container {
@@ -30,7 +31,7 @@
     color: var(--subheader-color);
     font-size: 14px;
     letter-spacing: .06em;
-    font-family: 'Grand Hotel', cursive;
+    font-family: var(--subheader-font-family);
     vertical-align: baseline;
 }
 
