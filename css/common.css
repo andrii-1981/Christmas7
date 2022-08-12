@@ -19,6 +19,7 @@
     scroll-behavior: smooth;
     --h2-font-family: 'Playfair Display', serif;
     --subheader-font-family: 'Grand Hotel', cursive;
+    --p-font-family: 'Fira Sans', sans-serif;
   }
 
 .container {
