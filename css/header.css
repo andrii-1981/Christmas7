@@ -7,20 +7,18 @@
 
 .header__top__container > a {
     text-decoration: none;
-    color: white;  
+    color: var(--background-color);  
 }
-.header__top__container {
-    color: white;
-}
+
 .text__links {
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .header__bottom__christmas__decor {
     font-size: 48px;
     padding-top: 20px;
-    color: rgb(35,35,35);
+    color: var(--text-color);
     font-family: 'Playfair Display',serif;
 }
 
@@ -35,7 +33,7 @@
 
 .header__bottom_info__about__decoration {
     padding-top: 20px;
-    color: rgb(79,79,79);
+    color: var(--p-text-color2);
     font-size: 18px;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -43,7 +41,7 @@
 .header__bottom__h2__container {
     font-size: 18px;
     font-family: 'Grand Hotel', undefined;
-    color: rgb(187,37,40)
+    color: var(--subheader-color);
 }
 
 .header__top__container{
@@ -53,7 +51,7 @@ opacity: 0;
 @media (min-width: 991px) {
     .header__top__container {
     opacity: 1;
-        background-color: rgb(187,37,40);
+        background-color: var(--subheader-color);
         color: white;
         padding: 5px;
         max-width: 1500px;
@@ -173,7 +171,7 @@ opacity: 0;
 }
 
 .header__bottom__shop__button__button {
-    background-color: rgb(187,37,40);
+    background-color: var(--subheader-color);
     color: white;
     cursor: pointer;
     width: 87px;
