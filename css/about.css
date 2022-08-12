@@ -1,6 +1,11 @@
 #about {
     display: flex;
     flex-direction: column;
+    padding: 120px 0px;
+}
+
+#about > div.about__image > img { 
+    width: 100%;
 }
 
 #about > div.about__info > h2 {
