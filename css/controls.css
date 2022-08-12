@@ -4,7 +4,7 @@
     width: 120px;
     background-color: var(--subheader-color);
     text-decoration: none;
-    color: white;
+    color: var(--backgroung-for-little-block);
     text-align: center;
     font-size: 10.8px;
     font-weight: 400;
@@ -22,7 +22,7 @@
     display: block;
     height: 45.5px;
     width: 120px;
-    background-color: white;
+    background-color:var(--backgroung-for-little-block);
     text-decoration: none;
     color: black;
     text-align: center;
@@ -37,7 +37,7 @@
   .button_contact:hover {
     background-color: rgb(35, 35, 35);
     transition-duration: 1s;
-    color: white;
+    color: var(--backgroung-for-little-block);
   }
   
   .button_contactus {
@@ -51,7 +51,7 @@
     font-weight: 400;
     margin: 0 15px 20px 0;
     line-height: 55px;
-    border: 2px solid white;
+    border: 2px solid var(--backgroung-for-little-block);
     cursor: pointer;
     letter-spacing: 1px;
   }
@@ -97,3 +97,41 @@
     white-space: nowrap;
     text-decoration: none;
    }
+ .popup_btn button {
+  display: block;
+  margin: 55px auto;
+  width: 188px;
+  height: 55px;
+  border: 2px solid var(--backgroung-for-little-block);
+  color: rgb(35, 35, 35);
+  font-family: var(--p-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  box-shadow: 0 4px 14px 0 rgb(12 12 12 / 26%);
+  background-color: var(--backgroung-for-little-block);
+  cursor: pointer;
+}
+ .popup_btn button:hover {
+  background-color: #e7d2c1;
+  transition-duration: 1s;
+  border: 2px solid #e7d2c1;
+}
+
+@media (min-width: 350px) {
+  .popup_btn button {
+    width: 312px;
+  }
+}
+@media (min-width: 768px) {
+  .popup_btn button {
+    width: 148px;
+  }
+}
+
+@media (min-width: 992px) {
+  .popup_btn button {
+    width: 230px;
+  }
+}

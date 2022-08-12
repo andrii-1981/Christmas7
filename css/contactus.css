@@ -43,6 +43,7 @@
   
   .contact_us_phone_link:hover {
     text-decoration: underline;
+    color: var(--backgroung-for-little-block);
   }
   .contact_us_header,
   .contact_us_text {
