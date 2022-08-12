@@ -1,0 +1,13 @@
+#about {
+    display: flex;
+    flex-direction: column;
+}
+#about > div.about__info > h2 {
+    
+}
+@media (min-width: 768px){
+    #about {        
+        flex-direction: row;
+    
+    }
+}
