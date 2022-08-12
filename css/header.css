@@ -188,13 +188,13 @@ opacity: 0;
 }
 
 .header__bottom__shop__button__button:hover {
-background-color: #000;
+background-color: var(--text-color);
 }
 
 .header__bottom__learn__button__button {
     background-color: white;
     border: 2px solid black;
-    color: black;
+    color: var(--text-color);
     cursor: pointer;
     width: 120px;
     height: 42px;
@@ -211,6 +211,6 @@ background-color: #000;
 }
 
 .header__bottom__learn__button__button:hover {
-    background-color: #000;
+    background-color: var(--text-color);
     color: white;
 }
