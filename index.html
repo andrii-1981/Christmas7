@@ -429,30 +429,65 @@
 
   <!-- modal popup start -->
   <div id="popup" class="popup">
-    <div class="popup__container">
-      <a href="#" class="popup__close close-popup">X</a>
-      <div class="popup__title">Let the Christmas Magic Begin!</div>
-      <div class="popup__icon">
-        <img style="background-color: #FA343D;" src="img/special_offer/icon/icon_two_arrow.svg" alt="icon_arrow">
-      </div>
-      <div class="popup__popup_form">
-        <form action="https://formspree.io/f/xeqdjnpn" method="post" enctype="multipart/form-data">
-          <div class="popup_name">
-            <input placeholder="Enter your full name*" tabindex="1" type="text" name="user_name" value="" required />
+    <div class="popup__main"> 
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close close-popup">&#10006</a>
+          <div class="popup__title">Let the Christmas Magic Begin!</div>
+          <div class="popup__icon">
+            <img src="img/icon/icon_two_arrow.svg" alt="icon_arrow" />
           </div>
-          <div class="popup_phone">
-            <input placeholder="Enter your phone number*" tabindex="2" type="tel" name="user_tel" value="" required />
+          <div class="popup__popup_form">
+            <form
+              action="https://formspree.io/f/xeqdjnpn"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <div class="popup_name">
+                <input
+                  placeholder="Enter your full name*"
+                  tabindex="1"
+                  type="text"
+                  name="user_name"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="popup_phone">
+                <input
+                  placeholder="Enter your phone number*"
+                  tabindex="2"
+                  type="tel"
+                  name="user_tel"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="popup_email">
+                <input
+                  placeholder="Enter your e-mail*"
+                  tabindex="3"
+                  type="email"
+                  name="user_email"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="popup_message">
+                <input
+                  placeholder="Type your message"
+                  tabindex="4"
+                  type="text"
+                  name="user_text"
+                  value=""
+                />
+              </div>
+              <div class="popup_btn">
+                <button tabindex="5" type="submit">Submit</button>
+              </div>
+            </form>
           </div>
-          <div class="popup_email">
-            <input placeholder="Enter your e-mail*" tabindex="3" type="email" name="user_email" value="" required />
-          </div>
-          <div class="popup_message">
-            <input placeholder="Type your message" tabindex="4" type="text" name="user_text" value="" />
-          </div>
-          <div class="popup_btn">
-            <button tabindex="5" type="submit">Submit</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>

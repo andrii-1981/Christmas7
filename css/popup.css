@@ -1,0 +1,128 @@
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    display: none;
+  }
+  
+  .popup__main {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  
+  .popup__body {
+    max-width: 100%;
+    min-height: 100%;
+    background: url(../img/bg_contact_us.png) center center/cover no-repeat;
+    margin: 180px 415px 260px 415px;
+  
+    /*
+    padding: 00px 120px;*/
+  }
+  
+  .popup__content {
+    padding: 180px 15px;
+    position: relative;
+  }
+  
+  @media (min-width: 350px) {
+    .popup__content {
+      padding: 160px 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    .popup__content {
+      padding: 180px 70px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .popup__content {
+      padding: 180px 370px;
+    }
+  }
+  .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 100;
+    color: black;
+  }
+  
+  .popup__title {
+    font-size: 34px;
+    color: white;
+    line-height: 40.8px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .popup__title {
+      font-size: 38px;
+      line-height: 45.6px;
+    }
+  }
+  @media (min-width: 992px) {
+    .popup__title {
+      font-size: 42px;
+      line-height: 50.4px;
+    }
+  }
+  
+  .popup__icon {
+    height: 32px;
+    max-width: 100%;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .popup__popup_form input {
+    display: block;
+    margin: 20px auto 0px auto;
+    padding: 20px 50px;
+    min-width: 162px;
+    height: 55px;
+    background: white;
+    color: rgb(35, 35, 35);
+    font-size: 10.8px;
+    font-stretch: 100%;
+    line-height: 15px;
+    cursor: pointer;
+    border-color: rgb(249, 244, 238);
+  }
+  
+  @media (min-width: 350px) {
+    .popup__popup_form input {
+      min-width: 312px;
+    }
+  }
+  @media (min-width: 768px) {
+    .popup__popup_form input {
+      width: 148px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .popup__popup_form input {
+      min-width: 230px;
+    }
+  }
+  
+  .popup_name input {
+    background-image: url(../img/icon/card_icon.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 16px 18px;
+    background-position: 98% 50%;
+  }
+  
+  .popup_message input {
+    height: 150px;
+    font-stretch: normal;
+  }
+  
