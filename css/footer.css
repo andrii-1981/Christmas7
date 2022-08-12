@@ -13,6 +13,10 @@ footer{
     color: #FFFFFF;
     position: absolute; 
 }
+a.list__element-nav{
+    color: #FFFFFF;
+    text-decoration: none;
+}
 .list_element, .list__element-nav, .footer__text, .footer__coment, .coment{
     font-family: 'PT Sans', sans-serif;
 }
@@ -85,9 +89,10 @@ ul{
     list-style: none;
     padding: 0;
 }
-a{
+.list,.footer__title{
     text-decoration: none;
-    color: #FFFFFF;
+    color: #FFFFFF
+
 }
 .container__logo-paragraph, .container__navigation, .container__contacts, .container__visitus{
     flex-basis: 100px;
@@ -103,6 +108,7 @@ a{
 .footer__text{
     line-height: 21px;
     font-size: 14px;
+    padding-right: 10px;
 }
 .list__element-nav{
     text-align: left;
@@ -153,8 +159,8 @@ a{
 }
 
 .list:hover, .list:focus{
-    text-decoration: underline
-
+    text-decoration: underline;
+    color:#FFFFFF
 }
 
 .element_icon:hover, .element_icon:focus{
@@ -166,5 +172,6 @@ a{
       }
 p{
     margin-bottom: 0;
+    margin-top: 0;
 }
       
