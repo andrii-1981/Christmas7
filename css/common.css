@@ -17,6 +17,7 @@
     --p-text-color2: #4F4F4F;
     --p-text-color1: #737373;
     scroll-behavior: smooth;
+    --h2-font-family: 'Playfair Display', serif;
   }
 
 .container {
@@ -34,7 +35,7 @@
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--h2-font-family);
     color: var(--text-color);
     font-weight: bold;
     font-size: 34px;
