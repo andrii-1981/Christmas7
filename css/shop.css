@@ -43,43 +43,6 @@
     vertical-align: baseline;
     width: 1170px;
   }
-  .row {
-    display: inline-block;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 16px;
-    height: 455px;
-    line-height: 25px;
-    width: 1170px;
-  }
-  
-   @media (min-width: 768px) {
-    .row {
-        padding: 0 32px;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        }
-    }
-
-  .column {
-    float: left;
-    display: inline;
-    flex-basis: 25%;
-    font-size: 16px;
-    font-weight: 400;
-    height: 455px;
-    justify-content: center;
-    line-height: 25px;
-    max-width: 25%;
-    padding: 0px 15px;
-    text-align: center;
-    width: 300px;
-    -webkit-box-pack: center;
-    border: 2px solid #f9f4ee;
-    flex-basis: 100%;
-    
-    }
-  
   .img-shop {
     height: 226px;
     line-height: 25px;
