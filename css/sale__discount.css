@@ -8,21 +8,22 @@
 .sale__discount__free {
     margin: 10px;
     background-image: url(..//img/sale__discount/background_buy.png);
-    padding-top: 35px;
-    padding-bottom: 35px;
+    background-position: 61% 48%;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 29px;
     padding-right: 29px;
     max-width: 100%;
     flex-direction: column;
-    background-position: 55% 70%;
     color: white;
+    display: block;
 }
 .sale__discount__off {
     margin: 10px;
     background-image: url(..//img/sale__discount/background_off.png);
     background-position: 89% 10%;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     padding-left: 29px;
     padding-right: 29px;
     max-width: 100%;
@@ -32,24 +33,27 @@
 .sale__discount__buy__button {
     border: 2px solid white;
     padding: 20px 50px 20px 50px;
-    margin: 10px;
+    margin-top: 40px;
     max-width: 230px;
     max-height: 100px;
     display: flex;
     text-align: center;
     align-items:flex-end;
-    color: white;
+    
     border-radius: 2px;
 }
 .sale__discount__buy__button:hover {
     background-color: white;
     color: black;
+    text-decoration-color: black;
+}
+.sale__discount__right__arrow:hover {
+    content: url(..//img/sale__discount/right__arrow.png);
 }
 .sale__discount__buy__button__inner {
     margin: auto;
     color: white;
     display: flex;
-    
 
 }
 
@@ -77,16 +81,15 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }    
-.text__links {
-    margin: 5px;
-    text-decoration: none;
-    color: white;
-}
+
 
 @media (max-width: 768px){
     .sale__discount {
         display: grid;
         grid-template-columns: 1fr;
         gap: 5px;
+    }
+    .sale__discount__h {
+        font-size: 22px;
     }
 }
