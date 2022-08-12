@@ -157,6 +157,7 @@ opacity: 0;
     align-items:baseline;
     text-align:justify;
     width: 100%;
+    max-width: 100%;
     border: 1px solid #000;
     border-radius: 3px;
     background-color: white;
@@ -168,7 +169,7 @@ opacity: 0;
     height: 450px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 .container__header__button {
