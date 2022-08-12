@@ -119,9 +119,8 @@ a{
 }
 @media (max-width: 760px){
     .footer__icon-list{
-        padding-left: 20%;
-        padding-right: 50%;
-        
+        flex: 1;
+        justify-content: space-evenly;
     }
 }
 
@@ -131,6 +130,7 @@ a{
         margin-right: 50%;
         
     }
+
 }
 
 @media (max-width: 760px){
