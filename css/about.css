@@ -2,8 +2,15 @@
     display: flex;
     flex-direction: column;
 }
+
 #about > div.about__info > h2 {
-    
+    font-size: 48px;
+}
+
+#about > div.about__info > p {
+    font-family: var(--p-font-family);
+    font-size: 18px;
+    color:var(--p-text-color2);
 }
 @media (min-width: 768px){
     #about {        
