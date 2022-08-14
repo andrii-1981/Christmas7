@@ -5,7 +5,7 @@
 @media (min-width:991px) {
 .header__top__container {
 background-color: var(--subheader-color);
-color: white;padding: 5px;
+color: var(--backgroung-for-little-block);padding: 5px;
 max-width: 1500px;
 width: 100%;
 display: flex;
@@ -43,15 +43,15 @@ text-decoration: underline;
 }
 .header__top__container__links__number__tel > a {
     text-decoration: none;
-    color: white;
+    color: var(--backgroung-for-little-block);
 }
 .header__top__container__links__mail__post > a {
     text-decoration: none;
-    color: white;
+    color: var(--backgroung-for-little-block);
 }
 }
 .navigation__header {
-    background-color: white;
+    background-color: (--backgroung-for-little-block);
     height: 120px;
     width: 100%;
 }
@@ -110,12 +110,12 @@ text-decoration: underline;
 }
     .text__links {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
     .text__links:hover {
 text-decoration: underline;
-text-decoration-color: #000;
-color: rgb(211, 39, 39);
+text-decoration-color: var(--text-color);
+color: var(--subheader-color);
 }
 .image__links_container__middle {
 padding-right: 50px;
@@ -169,7 +169,7 @@ body.lock {
    left: 0;
    height: 2px;
    width: 100%;
-   background-color: black;
+   background-color: var(--text-color);
    transition: all 0.5s ease-in-out;
 }
 .navigation-burger span {
@@ -203,7 +203,7 @@ bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--background-color);
     z-index: 2;
     transition: top 0.3s ease-in;
     padding: 15px 24px 50px 24px;
@@ -268,7 +268,7 @@ top:0;
 }
 .lock a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
 }
 
     }
@@ -309,9 +309,9 @@ top:0;
     text-align:justify;
     width: 100%;
     max-width: 550px;
-    border: 1px solid #000;
+    border: 1px solid var(--text-color);
     border-radius: 3px;
-    background-color: white;
+    background-color: var(--backgroung-for-little-block);
     padding-top: 39px;
     padding-bottom: 39px;
     padding-left: 35px;
@@ -339,7 +339,7 @@ top:0;
 
 .header__bottom__shop__button__button {
     background-color: var(--subheader-color);
-    color: white;
+    color: var(--backgroung-for-little-block);
     cursor: pointer;
     width: 87px;
     height: 42px;
@@ -360,8 +360,8 @@ color: white;
 }
 
 .header__bottom__learn__button__button {
-    background-color: white;
-    border: 2px solid black;
+    background-color: var(--backgroung-for-little-block);
+    border: 2px solid var(--text-color);
     color: var(--text-color);
     cursor: pointer;
     width: 120px;
@@ -380,7 +380,7 @@ color: white;
 
 .header__bottom__learn__button__button:hover {
     background-color: var(--text-color);
-    color: white;
+    color: var(--backgroung-for-little-block);
 }
 
 @media (max-width:375px){
@@ -393,9 +393,9 @@ color: white;
         text-align:justify;
         width: 100%;
         max-width: 550px;
-        border: 1px solid #000;
+        border: 1px solid var(--text-color);
         border-radius: 3px;
-        background-color: white;
+        background-color: var(--backgroung-for-little-block);
         padding-top: 39px;
         padding-bottom: 39px;
         padding-left: 35px;
