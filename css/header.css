@@ -393,7 +393,6 @@ color: white;
         text-align:justify;
         width: 100%;
         max-width: 550px;
-        border: 1px solid;
         border-radius: 3px;
         background-color: var(--backgroung-for-little-block);
         padding-top: 39px;
