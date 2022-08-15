@@ -15,7 +15,7 @@
     padding-right: 29px;
     max-width: 100%;
     flex-direction: column;
-    color: white;
+    color: var(--backgroung-for-little-block);
     display: block;
 }
 .sale__discount__off {
@@ -28,7 +28,7 @@
     padding-right: 29px;
     max-width: 100%;
     flex-direction: column;
-    color: white;
+    color: var(--backgroung-for-little-block);
 }
 .sale__discount__buy__button {
     border: 2px solid white;
@@ -42,17 +42,10 @@
     
     border-radius: 2px;
 }
-.sale__discount__buy__button:hover {
-    background-color: white;
-    color: black;
-    text-decoration-color: black;
-}
-.sale__discount__right__arrow:hover {
-    content: url(..//img/sale__discount/right__arrow.png);
-}
+
 .sale__discount__buy__button__inner {
     margin: auto;
-    color: white;
+    color: var(--backgroung-for-little-block);
     display: flex;
 
 }
@@ -68,9 +61,9 @@
 }
 .sale__discount__text {
     font-size: 42px;
-    color: white;
+    color: var(--backgroung-for-little-block);
     line-height: 1.2;
-    font-family: Playfair Display,serif;
+    font-family: var(--h2-font-family);
     font-weight: 600;
     margin-top: 20px;
 }
@@ -80,9 +73,11 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}    
-
-
+} 
+.text__link__buy {
+    text-decoration: none;
+    color: var(--backgroung-for-little-block);
+}  
 @media (max-width: 768px){
     .sale__discount {
         display: grid;
@@ -93,3 +88,15 @@
         font-size: 22px;
     }
 }
+/*
+.sale__discount__buy__button:hover {
+    background-color: var(--backgroung-for-little-block);
+    color: var(--text-color);
+    text-decoration-color: var(--text-color);
+    
+}
+.sale__discount__right__arrow:hover {
+    content: url(..//img/sale__discount/right__arrow.png);
+}
+*/
+
