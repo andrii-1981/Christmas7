@@ -1,0 +1,111 @@
+.faq_main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq_title{
+    margin-top: 20px;
+  }
+  
+  .faq_text {
+    font-family: Fira Sans,sans-serif;
+    color: var(--p-text-color1);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+.accordeon {
+  padding: 0px;
+  max-width: 800px;
+}
+ 
+.accordeon .box {
+  position: relative;
+  margin-bottom: 0px; /* Нижний отступ между элементами аккордеона */
+}
+ 
+.accordeon .box:last-child {
+  margin-bottom: 0; /* Для последнего элемента нижний отступ убираем */
+}
+ 
+.accordeon .box .label {
+  position: relative;
+  padding-bottom: 20px; /* Внутренний отступ для видимой части */
+  background-color: #fff; /* Цвет элемента аккордеона */
+  color: var( --p-text-color1); /* Цвет шрифта элемента аккордеона */
+  cursor: pointer; /* Меняем курсор при наведении */
+}
+ 
+.accordeon .box .label::after { 
+  content: "+"; /* Задаем иконку "+" для элемента аккордеона */
+  position: absolute;
+  top: 30%; /* Выравнивание по центру */
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+  box-sizing: inherit;
+  
+}
+ 
+.accordeon .box.active .label::after {
+  box-sizing: inherit;
+  font-size: smaller;
+  font-weight: bold;
+  content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
+}
+ 
+.accordeon .box .content {
+  position: relative;
+  background-color: #fff; /* Цвет фона контента */
+  overflow: hidden;
+  max-height: 0; /* Скрываем контент */
+  transition: 0.3s; /* Для плавности анимации */
+}
+ 
+.accordeon .box .content p {
+  padding-bottom: 20px;
+}
+
+/*google maps css */
+.position_map{
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.faq__googlemaps {
+  height: 500px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  position: absolute; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+
+.faq__contactform {
+  position: relative;
+  z-index: 1; /* The z-index should be higher than Google Maps */
+  width: 300px;
+  left: 65%;
+  top: 100px;
+  background: #fff;
+  height: auto;
+  color:  var( --p-text-color1);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+@media (max-width: 992px) {
+  .faq__contactform {
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+}
+
+.arrow__faq{
+  padding-left: 50px;
+}
