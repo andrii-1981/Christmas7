@@ -1,21 +1,46 @@
 #about {
     display: flex;
-    flex-direction: column;
-    padding: 120px 0px;
+    flex-direction: column;    
 }
-
-#about > div.about__image > img { 
+#about > div.about__image{ 
+    
+}
+#about > div.about__image > img {    
+    display: block;
+    object-fit: cover;    
     width: 100%;
+    margin-bottom: -40px;
+    
 }
-
-#about > div.about__info > h2 {
+#about > div.about__info {
+    background-color:var(--background-color);
+    padding: 90px 30px;
+}
+#about > div.about__info h2 {    
     font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
-
-#about > div.about__info > p {
+#about > div.about__info > img {
+    margin-top: 35px;    
+}
+#about > div.about__info > div.about__text p {
     font-family: var(--p-font-family);
     font-size: 18px;
     color:var(--p-text-color2);
+    margin-top: 20px;    
+}
+#about > div.about__info > .about__info-slider {
+    margin-bottom: 30px;
+
+}
+#about > div.about__info > .about__info-slider a > img {
+    margin-top: 25px;
+    width: 100%;
+    
+}
+#about > div.about__info .slider-dots {
+    margin-top: 10px;
 }
 #about > div.about__info span.slider-dot {
     height: 10px;
@@ -27,7 +52,19 @@
 }
 @media (min-width: 768px){
     #about {        
-        flex-direction: row;
+        flex-direction: row;    
+    }
+    #about > div.about__image,
+    #about > div.about__info {
+        width: 50%;
+    }
+    #about > div.about__image{ 
     
+    }
+    #about > div.about__image > img {    
+        display: block;
+        object-fit: cover;    
+        width: auto;
+        height: 100%;
     }
 }
