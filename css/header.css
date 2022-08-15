@@ -395,7 +395,7 @@ background-color: var(--text-color);
         text-align:justify;
         width: 100%;
         max-width: 550px;
-        border: 1px solid #000;
+        border: 1px;
         border-radius: 3px;
         background-color: white;
         padding-top: 39px;
