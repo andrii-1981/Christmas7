@@ -20,6 +20,10 @@
     --h2-font-family: 'Playfair Display', serif;
     --subheader-font-family: 'Grand Hotel', cursive;
     --p-font-family: 'Fira Sans', sans-serif;
+    --popup-color: rgba(0, 0, 0, 0.8);
+    --popup-close:black;
+    --popup-form-input:rgb(35, 35, 35);
+    --popup-form-border:rgb(249, 244, 238);
   }
 
 .container {
