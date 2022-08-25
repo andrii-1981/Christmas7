@@ -1,0 +1,179 @@
+.container__decoration-gallery{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 24px 60px 24px;
+}
+@media (min-width: 990px){
+    .container__decoration-gallery{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.decoration-december1{
+    background-image: url(../img/hoetostoreandclean/childisholdingball.png);
+    background-size: cover; 
+    /* position: absolute; */
+    background-position: center;
+    min-height: 630px;
+}
+@media (min-width: 1024px){
+    .decoration-december1{
+        min-width: 290px;
+        margin-right: 20px;
+    }
+}
+@media (min-width: 1279px){
+    .decoration-december1{
+        min-width: 370px;
+    }
+}
+@media (min-width: 770px){
+    .decoration-december1{
+        padding: 0px 15px 0px 15px;
+    }
+}
+@media (min-width: 770px){
+    .container__decoration-gallery{
+        padding: 60px 32px 60px 32px;
+    }
+}
+.carousel{
+    margin-top: 30px;
+}
+@media (min-width: 768px){
+    .carousel-slides{
+        display: flex;
+    }
+}
+@media (min-width: 1024px){
+    .carousel{
+        margin-top: 0px;
+    }
+}
+.decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
+    width: 100%;
+    height: auto;
+}
+.article-one, .article-two, .article-three{
+    padding: 0px 15px 0px 15px;
+}
+.carousel_btn-prev, .carousel_btn-next{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(233, 192, 189);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    border: thin;
+}
+.ikon-december3, .ikon-december5, .ikon-december2, .ikon-december1{
+    display: flex;
+    margin-top: 20px;
+}
+.decoration-december1{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    align-items: flex-end;
+    padding: 0px 20px 15px 20px;
+    line-height: 24px;
+}
+.ikon-paragraph{
+    font-weight: 600;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    align-self: center;
+}
+.ikon-paragraphphoto{
+    color: #737373;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    align-self: center;
+}
+.ikon-december1>img{
+    width: 45px;
+}
+.ikon-december2>img{
+    width: 20px;
+}
+.ikon-december3>img{
+    width: 20px;
+}
+.ikon-december5>img{
+    width: 40px;
+}
+.ikon-title{
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 59px;
+    line-height: 36px;
+    color: #FFFFFF
+}
+
+@media (min-width: 1024px) {
+    .ikon-title{
+        font-size: 30px;
+    }
+    
+}
+.santa-title, .mother-title, .foot-title{
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 20px;
+    line-height: 24px;
+    color: #232323;
+
+} 
+.santa-paragraph, .mother-paragraph, .foot-paragraph{
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 24px;
+    color: #737373;
+    
+}
+.data{
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+}
+.data-foot, .data-mother, .data-santa{
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    color: #232323;
+    line-height: 75px;
+}
+
+.decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
+    
+    height: 194px;
+}
+@media (min-width: 786px) {
+    .decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
+        height: 210px;
+    }
+}
+@media (min-width: 1024px) {
+    .decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
+        height: 200px;
+    }
+}
+@media (min-width: 1280px) {
+    .decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
+        
+        height: 241px;
+    }
+}
+.carousel_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
