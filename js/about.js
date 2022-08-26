@@ -3,7 +3,8 @@
         `img/section-about/partner-canadian-homes.svg`,
         `img/section-about/partner-home-interiorg.svg`,
         `img/section-about/partner-home-shopping.svg`,
-        `img/section-about/partner-jrwins.svg`,       
+        `img/section-about/partner-jrwins.svg`,
+        `img/section-about/partner-hallmark.svg`,       
       ];
     
       let currentSlideIdx = 0;
