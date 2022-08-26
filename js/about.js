@@ -10,7 +10,7 @@
       let currentSlideIdx = 0;
     
       function renderCarousel() {
-        const slideContainer = document.querySelector('.about__info-slider');
+        const slideContainer = document.querySelector('.about__info-slider-imgs');
         //slideContainer.innerHTML = slides[currentSlideIdx];
         slideContainer.innerHTML =
           `<a href="${slides[currentSlideIdx]}"><img width="100"
@@ -39,6 +39,8 @@
         renderCarousel();
       }
       setInterval(next, 3000);
-      renderCarousel();   
+      renderCarousel();
+      window.addEventListener('resize', renderCarousel); 
+       
       
 })();
