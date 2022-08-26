@@ -6,10 +6,16 @@
     left: 0;
     background-color: var(--popup-color);
     overflow: auto;
-    display: none;
     z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
   }
-  
+  .popup.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+  }  
   .popup__main {
     display: flex;
     align-self: center;
@@ -21,9 +27,12 @@
     min-height: 100%;
     background: url(../img/special_offer/bg_contact_us.png) center center/cover no-repeat;
     margin: 180px 415px 260px 415px;
-
+    transition: 0.5s all;
   }
-  
+  .popup__body.active {
+    transition: 0.5s all;
+  }
+
   .popup__content {
     padding: 180px 15px;
     position: relative;
