@@ -3,7 +3,6 @@
     max-width: 100%;
     box-sizing: border-box;
     display: flex;
-    
 }
 .sale__discount__free {
     margin: 10px;
@@ -39,25 +38,19 @@
     display: flex;
     text-align: center;
     align-items:flex-end;
-    
     border-radius: 2px;
 }
-
 .sale__discount__buy__button__inner {
     margin: auto;
     color: var(--backgroung-for-little-block);
     display: flex;
-
 }
-
-
 .sale__discount__h {
     font-family: Grand Hotel,undefined;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 1.08px;
-    
 }
 .sale__discount__text {
     font-size: 42px;
@@ -88,15 +81,4 @@
         font-size: 22px;
     }
 }
-/*
-.sale__discount__buy__button:hover {
-    background-color: var(--backgroung-for-little-block);
-    color: var(--text-color);
-    text-decoration-color: var(--text-color);
-    
-}
-.sale__discount__right__arrow:hover {
-    content: url(..//img/sale__discount/right__arrow.png);
-}
-*/
 
