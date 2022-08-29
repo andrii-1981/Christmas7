@@ -40,8 +40,9 @@
     margin-bottom: 30px;
 
 }
-#about > div.about__info .slider-dots {
+#about > div.about__info .about__slider-dots {
     margin-top: 10px;
+    text-align: center;
 }
 #about > div.about__info span.slider-dot {
     height: 10px;
