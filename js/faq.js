@@ -1,3 +1,4 @@
+{
 const boxes = Array.from(document.querySelectorAll(".box")); 
 
 boxes.forEach((box) => {
@@ -14,4 +15,5 @@ function boxHandler(e) {
   } else { // в противном случае
     currentContent.style.maxHeight = 0; 
   }
+}
 }
