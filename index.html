@@ -911,7 +911,7 @@
             <img src="img/special_offer/icon/icon_two_arrow.svg" alt="icon_arrow" />
           </div>
           <div class="popup__popup_form">
-            <form action="https://formspree.io/f/xeqdjnpn" method="post" enctype="multipart/form-data">
+            <form id="popup-form" action="https://formspree.io/f/xeqdjnpn" method="post">
               <div class="popup_name">
                 <input placeholder="Enter your full name*" tabindex="1" type="text" name="name" value=""
                   required />
@@ -928,6 +928,7 @@
               </div>
               <div class="popup_btn">
                 <button tabindex="5" type="submit">Submit</button>
+                 <p id="popup-form-status"></p>
               </div>
             </form>
           </div>
@@ -945,5 +946,6 @@
   <script src="js/faq.js"></script>
   <script src="js/popup.js"></script>
   <script src="./js/carousel.js"></script>
+  <script src="js/popup-formspree.js"></script>
 </body>
 </html>
