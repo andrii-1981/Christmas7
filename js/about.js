@@ -6,15 +6,11 @@
         `img/section-about/partner-jrwins.svg`,
         `img/section-about/partner-hallmark.svg`,
     ];
-
     let currentSlideIdx = 0;
     function renderCarousel() {
         const slideContainer = document.querySelector('.about__info-slider-imgs');
-
-
         slideContainer.innerHTML =
             `<a href="${slides[currentSlideIdx]}"><img src="${slides[currentSlideIdx]}" alt="slide about us"/></a>`
-
         if (window.innerWidth > 768) {
             const secondSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
             slideContainer.innerHTML += `<a href="${slides[secondSlideIdx]}"><img src="${slides[secondSlideIdx]}" alt="slide about us"/></a>`;
@@ -57,6 +53,5 @@
     renderCarousel();
     renderDots();
     setInterval(next, 3000);
-
     window.addEventListener('resize', renderCarousel);
 })();
