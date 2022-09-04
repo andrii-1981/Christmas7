@@ -75,7 +75,7 @@
   </header>
   <!--Tsono Vitalii end-->
   <!--Ivan start-->
-  <section class="shop__benefits">
+  <div class="shop__benefits">
     <div class="next__day__delivery container__shop__benefits">
       <div class="shop__benefits__panel__icon">
         <div class="shop__benefits__panel__icon__background">
@@ -137,13 +137,13 @@
         <p class="payment__methods_text">We accept cash, Visa and MasterCard, PayPal, and other payment methods.</p>
       </div>
     </div>
-  </section>
-  <section class="sale__discount">
+  </div>
+  <div class="sale__discount">
     <div class="sale__discount__free">
       <p class="sale__discount__h">Buy 3 get 1 free</p>
       <p class="sale__discount__text">All kinds of Tinsel Garlands.</p>
       <div class="sale__discount__buy__button">
-        <div class="sale__discount__buy__button__inner" href="#shop">
+        <div class="sale__discount__buy__button__inner">
           <a href="#shop" class="text__link__buy">Buy now </a>
           <img class="sale__discount__right__arrow" width="20" src="img/sale__discount/icon-right-white.png"
             alt="right arrow">
@@ -154,14 +154,14 @@
       <p class="sale__discount__h">- 25% off</p>
       <p class="sale__discount__text">All Glass Christmas baubles.</p>
       <div class="sale__discount__buy__button">
-        <div class="sale__discount__buy__button__inner" href="#shop">
+        <div class="sale__discount__buy__button__inner">
           <a href="#shop" class="text__link__buy">Buy now </a>
           <img class="sale__discount__right__arrow" width="20" src="img/sale__discount/icon-right-white.png"
             alt="right arrow">
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <!--Ivan end-->
   <!--Fursova Olha start-->
   <section class="bestsellers">
@@ -401,52 +401,16 @@
   </section>
   <!--Alexa block 10 end-->
 
-  <!-- modal popup start -->
-  <div id="popup" class="popup">
-    <div class="popup__main">
-      <div class="popup__body">
-        <div class="popup__content">
-          <a href="#close-popup" class="popup__close close-popup">&#10006</a>
-          <div class="popup__title">Let the Christmas Magic Begin!</div>
-          <div class="popup__icon">
-            <img src="img/special_offer/icon/icon_two_arrow.svg" alt="icon_arrow" />
-          </div>
-          <div class="popup__popup_form">
-            <form action="https://formspree.io/f/xeqdjnpn" method="post" enctype="multipart/form-data">
-              <div class="popup_name">
-                <input placeholder="Enter your full name*" tabindex="1" type="text" name="name" value=""
-                  required />
-              </div>
-              <div class="popup_phone">
-                <input placeholder="Enter your phone number*" tabindex="2" type="tel" name="tel" value=""
-                  required />
-              </div>
-              <div class="popup_email">
-                <input placeholder="Enter your e-mail*" tabindex="3" type="email" name="email" value="" required />
-              </div>
-              <div class="popup_message">
-                <input placeholder="Type your message" tabindex="4" type="text" name="text" value="" />
-              </div>
-              <div class="popup_btn">
-                <button tabindex="5" type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- modal popup end -->
-
+  
   <!--Alexa Khryplyvets end block 7/10 and popup -->
 
   <!--Anna Shevchenko start-->
   <section class="section__shop" id="shop">
     <header class="header__shop">
       <p>
-        <span class="subheader" style="color: red">Shop</span>
+        <span class="subheader">Shop</span>
       </p>
-      <h2 style="font-size: 30px"><strong>Decorations</strong></h2>
+      <h2 >Decorations</h2>
       <img alt="red line" src="img/section-shop/red_line.svg" />
       <p>
         <span class="about-section">
@@ -456,185 +420,195 @@
       </p>
     </header>
     <div class="container">
-      <nav class="nav-shop">
-        <button class="btn-nav-shop" id="#interior">
-          <span class="btn-context">Interior</span>
-        </button>
-        <button class="btn-nav-shop" id="#wreaths">
-          <span class="btn-context">Wreaths</span>
-        </button>
-        <button class="btn-nav-shop" id="#balls">
-          <span class="btn-context">Christmas Balls</span>
-        </button>
-        <button class="btn-nav-shop" id="#stockings">
-          <span class="btn-context">Stockings</span>
-        </button>
-      </nav>
-      <div class="row" id="interior">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="red_boot" src="img/section-shop/red_boot.png" />
-            <a href="#" class="link-shop">Red Boot</a>
-            <p>
-              <span class="price-shop">$18,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="interior-tab" data-toggle="tab" href="#interior" role="tab" aria-controls="interior" aria-selected="true">Interior</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="wreaths-tab" data-toggle="tab" href="#wreaths" role="tab" aria-controls="wreaths" aria-selected="true">Wreaths</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="balls-tab" data-toggle="tab" href="#balls" role="tab" aria-controls="balls" aria-selected="false">Christmas Balls</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="stockings-tab" data-toggle="tab" href="#stockings" role="tab" aria-controls="stockings" aria-selected="false">Stockings</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="interior" role="tabpanel" aria-labelledby="interior-tab">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="red_boot" src="img/section-shop/red_boot.png" />
+                <a href="#" class="link-shop">Red Boot</a>
+                <p>
+                  <span class="price-shop">$18,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="white_deer" src="img/section-shop/white_deer.png" />
+                <a href="#" class="link-shop">White Deer</a>
+                <p>
+                  <span class="price-shop">$12,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="gift_box" src="img/section-shop/gift_box.png" />
+                <a href="#" class="link-shop">Gift Box</a>
+                <p>
+                  <span class="price-shop">$12,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="snowman" src="img/section-shop/snowman.png" />
+                <a href="#" class="link-shop">Snowman</a>
+                <p>
+                  <span class="price-shop">$10,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+        </div> 
+        </div> 
+        <div class="tab-pane fade" id="wreaths" role="tabpanel" aria-labelledby="wreaths-tab">
+          <div class="row">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img class="img-shop" alt="elegant wreath" src="img/section-shop/elegant_wreath.png" />
+              <a href="#" class="link-shop">Elegant Wreath</a>
+              <p>
+                <span class="price-shop">$78,00</span>
+              </p>
+              <p><button class="cart-shop">Add to cart</button></p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img class="img-shop" alt="wreath with pine cons" src="img/section-shop/wreath_with_pine_cons.png" />
+              <a href="#" class="link-shop">Wreath With Pine Cons</a>
+              <p>
+                <span class="price-shop">$98,00</span>
+              </p>
+              <p><button class="cart-shop">Add to cart</button></p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img class="img-shop" alt="cinnamon wreath" src="img/section-shop/cinnamon_wreath.png" />
+              <a href="#" class="link-shop">Cinnamon Wreath</a>
+              <p>
+                <span class="price-shop">$95,00</span>
+              </p>
+              <p><button class="cart-shop">Add to cart</button></p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="card">
+              <img class="img-shop" alt="citrus wreath" src="img/section-shop/citrus_wreath.png" />
+              <a href="#" class="link-shop">Citrus Wreath</a>
+              <p>
+                <span class="price-shop">$89,00</span>
+              </p>
+              <p><button class="cart-shop">Add to cart</button></p>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="white_deer" src="img/section-shop/white_deer.png" />
-            <a href="#" class="link-shop">White Deer</a>
-            <p>
-              <span class="price-shop">$12,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
+        </div>
+        <div class="tab-pane fade" id="balls" role="tabpanel" aria-labelledby="balls-tab">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="red_christmas_ball" src="img/section-shop/red_christmas_ball.png" />
+                <a href="#" class="link-shop">Red Christmas Balls</a>
+                <p>
+                  <span class="price-shop">$20,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="silver_christmas_balls" src="img/section-shop/silver_christmas_balls.png" />
+                <a href="#" class="link-shop">Silver Christmas Balls</a>
+                <p>
+                  <span class="price-shop">$10,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="green_christmas_balls" src="img/section-shop/green_christmas_balls.png" />
+                <a href="#" class="link-shop">Green Christmas Balls</a>
+                <p>
+                  <span class="price-shop">$95,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="gold_christmas_balls" src="img/section-shop/gold_christmas_balls.png" />
+                <a href="#" class="link-shop">Gold Christmas Balls</a>
+                <p>
+                  <span class="price-shop">$89,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="gift_box" src="img/section-shop/gift_box.png" />
-            <a href="#" class="link-shop">Gift Box</a>
-            <p>
-              <span class="price-shop">$12,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="snowman" src="img/section-shop/snowman.png" />
-            <a href="#" class="link-shop">Snowman</a>
-            <p>
-              <span class="price-shop">$10,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="wreaths">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="elegant wreath" src="img/section-shop/elegant_wreath.png" />
-            <a href="#" class="link-shop">Elegant Wreath</a>
-            <p>
-              <span class="price-shop">$78,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="wreath with pine cons" src="img/section-shop/wreath_with_pine_cons.png" />
-            <a href="#" class="link-shop">Wreath With Pine Cons</a>
-            <p>
-              <span class="price-shop">$98,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="cinnamon wreath" src="img/section-shop/cinnamon_wreath.png" />
-            <a href="#" class="link-shop">Cinnamon Wreath</a>
-            <p>
-              <span class="price-shop">$95,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="citrus wreath" src="img/section-shop/citrus_wreath.png" />
-            <a href="#" class="link-shop">Citrus Wreath</a>
-            <p>
-              <span class="price-shop">$89,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="balls">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="red_christmas_ball" src="img/section-shop/red_christmas_ball.png" />
-            <a href="#" class="link-shop">Red Christmas Balls</a>
-            <p>
-              <span class="price-shop">$20,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="silver_christmas_balls" src="img/section-shop/silver_christmas_balls.png" />
-            <a href="#" class="link-shop">Silver Christmas Balls</a>
-            <p>
-              <span class="price-shop">$10,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="green_christmas_balls" src="img/section-shop/green_christmas_balls.png" />
-            <a href="#" class="link-shop">Green Christmas Balls</a>
-            <p>
-              <span class="price-shop">$95,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="gold_christmas_balls" src="img/section-shop/gold_christmas_balls.png" />
-            <a href="#" class="link-shop">Gold Christmas Balls</a>
-            <p>
-              <span class="price-shop">$89,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="stockings">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="santa_claus_stocking" src="img/section-shop/santa_claus_stocking.png" />
-            <a href="#" class="link-shop">Santa Claus Stocking</a>
-            <p>
-              <span class="price-shop">$15,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="christmas_red_stocking" src="img/section-shop/christmas_red_stocking.png" />
-            <a href="#" class="link-shop">Christmas Red Stocking</a>
-            <p>
-              <span class="price-shop">$22,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="stocking_with_pompons" src="img/section-shop/stocking_with_pompons.png" />
-            <a href="#" class="link-shop">Stocking With Pompons</a>
-            <p>
-              <span class="price-shop">$95,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-          <div class="card">
-            <img class="img-shop" alt="stocking_with_ball" src="img/section-shop/stocking_with_ball.png" />
-            <a href="#" class="link-shop">Stocking With Balls</a>
-            <p>
-              <span class="price-shop">$89,00</span>
-            </p>
-            <p><button class="cart-shop">Add to cart</button></p>
+        <div class="tab-pane fade" id="stockings" role="tabpanel" aria-labelledby="stockings-tab">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="santa_claus_stocking" src="img/section-shop/santa_claus_stocking.png" />
+                <a href="#" class="link-shop">Santa Claus Stocking</a>
+                <p>
+                  <span class="price-shop">$15,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="christmas_red_stocking" src="img/section-shop/christmas_red_stocking.png" />
+                <a href="#" class="link-shop">Christmas Red Stocking</a>
+                <p>
+                  <span class="price-shop">$22,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="stocking_with_pompons" src="img/section-shop/stocking_with_pompons.png" />
+                <a href="#" class="link-shop">Stocking With Pompons</a>
+                <p>
+                  <span class="price-shop">$95,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="card">
+                <img class="img-shop" alt="stocking_with_ball" src="img/section-shop/stocking_with_ball.png" />
+                <a href="#" class="link-shop">Stocking With Balls</a>
+                <p>
+                  <span class="price-shop">$89,00</span>
+                </p>
+                <p><button class="cart-shop">Add to cart</button></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -926,13 +900,52 @@
     </div>
   </footer>
   <!--Sofia end-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+  <!--Alex modal popup start -->
+  <div id="popup" class="popup">
+    <div class="popup__main">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#close-popup" class="popup__close close-popup">&#10006</a>
+          <div class="popup__title">Let the Christmas Magic Begin!</div>
+          <div class="popup__icon">
+            <img src="img/special_offer/icon/icon_two_arrow.svg" alt="icon_arrow" />
+          </div>
+          <div class="popup__popup_form">
+            <form id="popup-form" action="https://formspree.io/f/xeqdjnpn" method="post">
+              <div class="popup_name">
+                <input placeholder="Enter your full name*" tabindex="1" type="text" name="name" value=""
+                  required />
+              </div>
+              <div class="popup_phone">
+                <input placeholder="Enter your phone number*" tabindex="2" type="tel" name="tel" value=""
+                  required />
+              </div>
+              <div class="popup_email">
+                <input placeholder="Enter your e-mail*" tabindex="3" type="email" name="email" value="" required />
+              </div>
+              <div class="popup_message">
+                <input placeholder="Type your message" tabindex="4" type="text" name="text" value="" />
+              </div>
+              <div class="popup_btn">
+                <button tabindex="5" type="submit">Submit</button>
+                 <p id="popup-form-status"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Alex modal popup end -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/burger-menu.js"></script>
   <script src="js/about.js"></script>
   <script src="js/faq.js"></script>
   <script src="js/popup.js"></script>
   <script src="./js/carousel.js"></script>
+  <script src="js/popup-formspree.js"></script>
 </body>
 </html>

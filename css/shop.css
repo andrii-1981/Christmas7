@@ -6,19 +6,17 @@
     line-height: 28px;
     text-align: left;
   }
-  .btn-nav-shop {
+  .nav-tabs {
     display: inline-flex;
     position: relative;
-    padding: 10px 20px;
+    padding: 70px 0px 10px 0px;
     -webkit-box-align: center;
     align-items: center;
     background: transparent;
     cursor: pointer;
     flex-shrink: 0;
-    border-color: white;
-    border-style: none;
   }
-  .btn-context {
+  .nav-item {
     border-color: rgb(115, 115, 115);
     box-sizing: border-box;
     color: rgb(115, 115, 115);
@@ -28,7 +26,7 @@
     font-size: 18px;
     line-height: 28.08px;
   }
-  .btn-nav-shop:hover {
+  .nav-item:hover {
     border-bottom-style: solid;
     border-bottom-color: rgb(187, 37, 40);
     transition: 0.2s ease-in-out;
@@ -96,6 +94,7 @@
     padding-bottom: 2em;
   }
   .header__shop {
-    margin-left: 25px;
+    margin-left: 175px;
+    margin-top: 40px;
   }
  
