@@ -52,6 +52,10 @@
     border-radius: 50%;
     display: inline-block;
 }
+#about > div.about__info span.dot-activ
+{
+    background-color: #ff1100;
+}
 @media (min-width: 768px){
     #about {        
         flex-direction: row;    

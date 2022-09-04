@@ -36,11 +36,30 @@
         const slideDotsContainer = document.querySelector('.about__slider-dots');
         for( let i = 0; i < slides.length; i++) {
           slideDotsContainer.innerHTML +=
-          `<a href="#"><span class="slider-dot"></span></a>`;          
+          `<span class="slider-dot slide-${[i]}"></span>`;          
         }      
-      }
-      
+      }      
       addDotsToSlides();
+
+
+      for( let i = 0; i < slides.length; i++) {
+        let currentDot = '.slide-' + [i];        
+        let el = document.querySelector(currentDot);
+
+        if (el.addEventListener) {
+            el.addEventListener('click', ()=>{
+            if(document.querySelector('.slider-dot').classList.contains('dot-activ')){
+              document.querySelector('.slider-dot').classList.remove("dot-activ");
+            };
+            
+            el.classList.add("dot-activ"); 
+            console.log(currentDot);
+          }); 
+        }
+      }      
+      
+
+
 
       setInterval(next, 3000);
       renderCarousel();
