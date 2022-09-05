@@ -52,16 +52,9 @@
     border-radius: 50%;
     display: inline-block;
 }
-<<<<<<< HEAD
-#about > div.about__info span.dot-activ
-{
-    background-color: #ff1100;
-}
-=======
-    #about > div.about__info span.dot-activ {
+    #about > div.about__info span.dot-active {
         background-color: var(--subheader-color);
     }
->>>>>>> 0113c11ed50a107daf6f4bf9046a8ac1e64793e1
 @media (min-width: 768px){
     #about {        
         flex-direction: row;    
