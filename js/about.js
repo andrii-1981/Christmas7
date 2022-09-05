@@ -65,8 +65,10 @@
     el.classList.add('dot-active');
   }
   function removeClassDotActiveAllElements() {
-    for (let j = 0; j < aboutDots.length; j++) {            
-      aboutDots[j].classList.remove('dot-active');
+    for (let j = 0; j < aboutDots.length; j++) {
+      if (aboutDots[j].classList.contains('dot-active')) {
+        aboutDots[j].classList.remove('dot-active');
+      } 
     }
   }
 
