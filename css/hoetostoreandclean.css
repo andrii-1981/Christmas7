@@ -157,10 +157,8 @@
 .decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
     width: 100%;
     height: auto;
-
 }
 .decoration-december2>img, .decoration-december3>img, .decoration-december5>img{
-    
     height: 194px;
 }
 @media (min-width: 786px) {
@@ -189,6 +187,10 @@
 @media (min-width: 1024px) {
     .ikon-title{
         font-size: 30px;
-    }
-    
+    }   
+}
+@media (min-width: 1180px){
+ .container__decoration-gallery{
+     padding: 60px 32px 60px 32px;
+}
 }
