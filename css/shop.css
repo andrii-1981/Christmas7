@@ -180,11 +180,12 @@
     position:absolute;
     top: 20px;
     right: 20px;
-    font-size: 20px;
+    font-size: 16px;
     color: #1B1D1F;
     background: none;
     cursor: pointer;
     border: 0;
+    font-weight: 400;
 }
 
 .cart-header {
@@ -288,6 +289,18 @@
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.0em;
+  width: 155px;
+  font-size: 13px;
+  font-weight: 500;
+  height: 62.5px;
+  color: white;
+  background-color: #bb2528;
+  border-color: #bb2528;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-purchase:hover {
+  background-color: black;
 }
 
 .cart_widget {
@@ -323,4 +336,31 @@
 }
 .red-cart {
   color: #DF0000; background:white;
+}
+
+.item-heading {
+  line-height: 1.56;
+    font-family: Fira Sans,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: black;
+    text-transform: none;
+}
+.popup__header {
+  background-color: rgb(247, 248, 250);
+  color: #232323;
+}
+
+.section-header {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Fira Sans,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #737373;
+    text-transform: none;
 }
