@@ -71,10 +71,3 @@
     margin-top: 20px;
   }
 
-  @media (min-width: 765px) {
-    .happy_carousel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-  }
