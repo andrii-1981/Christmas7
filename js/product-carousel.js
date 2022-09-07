@@ -13,7 +13,7 @@
      <p class="carousel_date">December 15, 2019</p>
    </div>`,
    `<div class="carousel_item">
-     <img class="img_carousel" src="./img/happy_clients/happy_tree.png" alt="tree">
+     <img class="img_carousel" src="./img/happy_clients/happy_tree.jpg" alt="tree">
      <p class="carousel_name">Daniella Lexington</p>
      <div class="divider"></div>
      <p class="carousel_text">“The anticipation of Christmas is the best thing in December. I like the
@@ -25,7 +25,7 @@
      <p class="carousel_date">December 02, 2020</p>
    </div>`,
    `<div class="carousel_item">                    
-     <img class="img_carousel" src="./img/happy_clients/happy_kid.png" alt="kid">
+     <img class="img_carousel" src="./img/happy_clients/happy_kid.jpg" alt="kid">
      <p class="carousel_name">Susan Owler</p>
      <div class="divider"></div>
      <p class="carousel_text">“My daughter is 4 years old and she has been waiting for Christmas
