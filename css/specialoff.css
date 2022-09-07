@@ -23,7 +23,7 @@
  }
  .subheader {
    padding-top: 77px;
-   font-size: 20px;
+   font-weight: 400;
    color: var(--subheader-color);
  }
  
