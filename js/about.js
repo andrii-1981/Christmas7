@@ -11,17 +11,17 @@
   let currentSlideIdx = 0;
   function renderCarousel() {
     const slideContainer = document.querySelector('.about__info-slider-imgs');
-    slideContainer.innerHTML =
-      `<a href="${slides[currentSlideIdx]}"><img src="${slides[currentSlideIdx]} class = "trigger" alt="slide about us"/></a>`;    
+    let el = slideContainer.innerHTML =
+      `<div><img src="${slides[currentSlideIdx]}" class = "about-slide" alt="slide about us"/></div>`;
     if (window.innerWidth > 768) {
       const secondSlideIdx = currentSlideIdx + 1 >= slides.length ? 0 : currentSlideIdx + 1;
-      slideContainer.innerHTML += `<a href="${slides[secondSlideIdx]}"><img src="${slides[secondSlideIdx]}" class = "trigger" alt="slide about us"/></a>`;
+      slideContainer.innerHTML += `<div><img src="${slides[secondSlideIdx]}" class = "about-slide" alt="slide about us"/></div>`;
       if (window.innerWidth > 990) {
         const thirdSlideIdx = secondSlideIdx + 1 >= slides.length ? 0 : secondSlideIdx + 1;
-        slideContainer.innerHTML += `<a href="${slides[thirdSlideIdx]}"><img src="${slides[thirdSlideIdx]}" class = "trigger" alt="slide about us"/></a>`;
+        slideContainer.innerHTML += `<div><img src="${slides[thirdSlideIdx]}" class = "about-slide" alt="slide about us"/></div>`;
 
         const fourthSlideIdx = thirdSlideIdx + 1 >= slides.length ? 0 : thirdSlideIdx + 1;
-        slideContainer.innerHTML += `<a href="${slides[fourthSlideIdx]}"><img src="${slides[fourthSlideIdx]}" class = "trigger"  alt="slide about us"/></a>`;
+        slideContainer.innerHTML += `<div><img src="${slides[fourthSlideIdx]}" class = "about-slide"  alt="slide about us"/></div>`;
       }
     }
   }
@@ -30,18 +30,20 @@
     removeClassDotActiveAllElements();
     addClassDotActive(aboutDots[currentSlideIdx]);
     renderCarousel();
+    aboutSlides = document.querySelectorAll('.about-slide');
+    clickSlide();
   }
 
   //renderDots  
   function renderDots() {
     const slideDotsContainer = document.querySelector('.about__slider-dots');
     for (let i = 0; i < slides.length; i++) {
-      if ( i === 0 ) {
+      if (i === 0) {
         slideDotsContainer.innerHTML +=
-        `<span class="slider-dot slide-${[i]} dot-active"></span>`;
+          `<span class="slider-dot slide-${[i]} dot-active"></span>`;
       } else {
         slideDotsContainer.innerHTML +=
-        `<span class="slider-dot slide-${[i]}"></span>`;      
+          `<span class="slider-dot slide-${[i]}"></span>`;
       }
     }
   }
@@ -50,11 +52,12 @@
   function listenerClickDot() {
     for (let i = 0; i < aboutDots.length; i++) {
       if (aboutDots[i].addEventListener) {
-        aboutDots[i].addEventListener('click', () => {          
+        aboutDots[i].addEventListener('click', () => {
           removeClassDotActiveAllElements();
           addClassDotActive(aboutDots[i]);
           currentSlideIdx = i;
-          renderCarousel();          
+          renderCarousel();
+          clickSlide();
         });
       }
     }
@@ -68,29 +71,9 @@
     for (let j = 0; j < aboutDots.length; j++) {
       if (aboutDots[j].classList.contains('dot-active')) {
         aboutDots[j].classList.remove('dot-active');
-      } 
+      }
     }
   }
-
-  const modal = document.querySelector(".modal");
-    const trigger = document.querySelector(".trigger");
-    const closeButton = document.querySelector(".close-button");
-    
-    function toggleModal(ev) {
-        modal.classList.toggle("show-modal");
-        ev.stopPropagation();
-    }
-        
-    trigger.addEventListener("click", toggleModal);
-    closeButton.addEventListener("click", toggleModal);
-    modal.addEventListener("click", toggleModal);
-
-
-
-
-
-
-
 
   renderCarousel();
   renderDots();
@@ -98,4 +81,36 @@
   listenerClickDot();
   setInterval(next, 3000);
   window.addEventListener('resize', renderCarousel);
+
+  //modal
+  const modal = document.querySelector('.about-modal');
+  const modalContentImg = document.querySelector('.about-modal-content-img');
+  let aboutSlides = document.querySelectorAll('.about-slide');
+  const closeButton = document.querySelector('.about-close-button');
+
+  // aboutSlides.forEach(  (el) => {console.log("el" + el); el.addEventListener("click", toggleModal)});
+
+  function toggleModal(ev) {
+    modal.classList.toggle("about-show-modal");
+    if (modalContentImg.hasChildNodes()) {
+      modalContentImg.removeChild(modalContentImg.childNodes[0]);
+    }
+    modalContentImg.appendChild(this);
+    ev.stopPropagation();
+  }
+
+  function CloseToggleModal(ev) {
+    modal.classList.toggle("about-show-modal");
+    ev.stopPropagation();
+  }
+
+  function clickSlide() {
+    for (let i = 0; i < aboutSlides.length; i++) {
+      aboutSlides[i].addEventListener("click", toggleModal);
+      closeButton.addEventListener("click", CloseToggleModal);
+      modal.addEventListener("click", CloseToggleModal);
+    }
+  }
+  clickSlide();
+
 })();
