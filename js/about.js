@@ -113,4 +113,19 @@
   }
   clickSlide();
 
+  // ScrollTop
+  const BtnScrollTop = document.querySelector("#btn-scroll-top");  
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      BtnScrollTop.style.display = "block";
+    } else {
+      BtnScrollTop.style.display = "none";
+    }
+  }
+  BtnScrollTop.addEventListener('click',
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  })
 })();

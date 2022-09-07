@@ -64,7 +64,7 @@
 #about>div.about__info span.dot-active {
     background-color: var(--subheader-color);
 }
-
+/* SlidePopup */
 .about-modal {
     position: fixed;
     left: 0;
@@ -117,9 +117,27 @@ about-modal-content {
 .about-modal img {
     width: 100%;
 }
-
+/* ScrollTop */
+#btn-scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--subheader-color);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+  }  
+  #btn-scroll-top:hover {
+    background-color: #555;
+  }
 @media (min-width: 768px) {
-
+    
     #about {
         flex-direction: row;
     }
