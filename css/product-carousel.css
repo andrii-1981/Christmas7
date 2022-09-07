@@ -1,0 +1,31 @@
+.product-carousel {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  .prouduct__slide {
+    width: 50%;
+    margin: auto;
+  } 
+  
+  .products-carousel_slides {
+    min-height: 400px;
+  } 
+  
+  .products-carousel__btn-prev, .products-carousel__btn-next  {
+    border: none;
+    background-color: white;
+    color: #232323;
+    font-weight: 800;
+    font-size: x-large;
+    padding: 15px;
+  }
+  
+  @media (min-width: 600px) {
+    .products-carousel_slides {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+  }
