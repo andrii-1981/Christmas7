@@ -5,7 +5,7 @@
     font-size: 18px;
     line-height: 28px;
     text-align: left;
-    
+
   }
   .nav-tabs {
     display: inline-flex;
@@ -118,6 +118,7 @@
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 1px rgb(33 39 54 / 4%), 0 2px 4px rgb(33 39 54 / 16%);
+    z-index: 2;
 }
 
 .cart-button-icon__img {
