@@ -1,5 +1,4 @@
 (function () {
-  
   const slides = [
     `img/section-about/partner-canadian-homes.svg`,
     `img/section-about/partner-home-interiorg.svg`,
@@ -89,31 +88,40 @@
   let aboutSlides = document.querySelectorAll('.about-slide');
   const closeButton = document.querySelector('.about-close-button');
 
-  // aboutSlides.forEach(  (el) => {console.log("el" + el); el.addEventListener("click", toggleModal)});
-
   function toggleModal(ev) {
     modal.classList.toggle("about-show-modal");
     if (modalContentImg.hasChildNodes()) {
       modalContentImg.removeChild(modalContentImg.childNodes[0]);
     }
     modalContentImg.appendChild(this);
+    removeClassImgBig();
+    aboutSearch.classList.remove("about-display-none");
     ev.stopPropagation();
   }
 
   function CloseToggleModal(ev) {
     modal.classList.toggle("about-show-modal");
+    removeClassImgBig();
+    aboutSearch.classList.remove("about-display-none");
     ev.stopPropagation();
   }
+  function removeClassImgBig() {
+    aboutModalContent.classList.remove("about-img-big");
+  }
 
+  const aboutSearch = document.querySelector('.about-search');
+  const aboutModalContent = document.querySelector('.about-modal-content');
   function clickSlide() {
     for (let i = 0; i < aboutSlides.length; i++) {
       aboutSlides[i].addEventListener("click", toggleModal);
+      aboutSearch.addEventListener("click", () => {
+        aboutModalContent.classList.add("about-img-big");
+        aboutSearch.classList.add("about-display-none");
+      });
       closeButton.addEventListener("click", CloseToggleModal);
-      modal.addEventListener("click", CloseToggleModal);
     }
   }
   clickSlide();
-
   // ScrollTop
   const BtnScrollTop = document.querySelector("#btn-scroll-top");  
   window.onscroll = function() {scrollFunction()};
