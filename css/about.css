@@ -137,7 +137,7 @@ about-modal-content {
     background-color: #555;
   }
 @media (min-width: 768px) {
-    
+
     #about {
         flex-direction: row;
     }

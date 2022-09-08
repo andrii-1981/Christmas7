@@ -1,4 +1,5 @@
 (function () {
+  
   const slides = [
     `img/section-about/partner-canadian-homes.svg`,
     `img/section-about/partner-home-interiorg.svg`,
